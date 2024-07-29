@@ -1,0 +1,12 @@
+ 	Task	Responder	sender_entity	sender_name	recipient	block	tool_type	tool	content
+ 	Relevance-Extractor-1	Entity.USER	Entity.USER			None			3Foreword We all experience anxiety; it is a natural human state and a vital par...oners to check the list of the most common sources of anxiety in this survey and
+ 	Relevance-Extractor-1	Entity.USER	Entity.USER	Entity.USER		None			[CANNOT RESPOND]
+ 	Relevance-Extractor-1	Entity.AGENT	Entity.USER			None			
+*	Relevance-Extractor-1	Entity.LLM	Entity.LLM			None	FUNC	extract_segments	FUNC: { "name": "extract_segments", "arguments": { "segment_list": "2,3,4,6,7,13,14,15,19,21" } }
+*	Relevance-Extractor-1	Entity.AGENT	Entity.AGENT	extract_segments		None			DONE Anxiety helps us to identify and respond to danger in ‘fight or flight’ mod...d to offer a range of help that is simple, quick to access and non-stigmatising.
+ 	Task	Responder	sender_entity	sender_name	recipient	block	tool_type	tool	content
+ 	Relevance-Extractor-2	Entity.USER	Entity.USER			None			3Foreword We all experience anxiety; it is a natural human state and a vital par...oners to check the list of the most common sources of anxiety in this survey and
+ 	Relevance-Extractor-2	Entity.USER	Entity.USER	Entity.USER		None			[CANNOT RESPOND]
+ 	Relevance-Extractor-2	Entity.AGENT	Entity.USER			None			
+*	Relevance-Extractor-2	Entity.LLM	Entity.LLM			None	FUNC	extract_segments	FUNC: { "name": "extract_segments", "arguments": { "segment_list": "2,3,4,6,7,14,15,16,19,21" } }
+*	Relevance-Extractor-2	Entity.AGENT	Entity.AGENT	extract_segments		None			DONE Anxiety helps us to identify and respond to danger in ‘fight or flight’ mod...d to offer a range of help that is simple, quick to access and non-stigmatising.

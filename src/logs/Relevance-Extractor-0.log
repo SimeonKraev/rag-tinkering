@@ -1,0 +1,60 @@
+ [1m([0mRelevance-Extractor-[1;36m0[0m[1m)[0m [31m Entity.USER [0m [1;34mEntity.USER[0m[1m([0m          [1m)[0m [1m([0m=>          [1m)[0m [1m([0mX           [1m)[0m       [1m([0m          [1m)[0m [34m3Foreword[0m
+[34mWe all experience anxiety; it is a natural human state and a vital part of[0m
+[34mour lives. Anxiety helps us to identify and respond to danger in ‘fight or flight’[0m
+[34mmode. It can motivate to us face up to dealing with difficult challenges. The[0m
+[34m‘right’ amount of anxiety can help us perform better and stimulate action[0m
+[34mand creativity.[0m
+[34mBut there is another side to anxiety. Persistent anxiety causes real emotional[0m
+[34mdistress and can lead to us becoming unwell and, at worst, developing[0m
+[34manxiety disorders such as panic attacks, phobias and obsessional behaviours.[0m
+[34mAnxiety at this level can have a truly distressing and debilitating impact[0m
+[34mon our lives and impact on our physical as well as our mental health.[0m
+[34mSome commentators have described this as ‘The Age of Anxiety’. The[0m
+[34mMental Health Foundation’s survey, commissioned for this report, backs[0m
+[34mup this sense of widespread heightened anxiety. Alarmingly, almost [0m[1;34m1[0m[34m in [0m[1;34m5[0m
+[34mpeople revealed that they feel anxious ‘nearly all of the time’ or ‘a lot of the time’. More than half of us have noticed that ‘people are more anxious today[0m
+[34mthan they were [0m[1;34m5[0m[34m years ago.’ The survey highlights ‘finance, money and debt’[0m
+[34mas the most common source of anxiety, perhaps reflecting the impact of[0m
+[34mthe recession and austerity on public mental health and well-being.[0m
+[34mAnxiety is one of the most common mental health problems in the UK and[0m
+[34mit is increasing. Yet it remains under-reported, under-diagnosed and under-[0m
+[34mtreated. A good ability to cope with anxiety is key to resilience in the face of[0m
+[34mwhatever life throws at us. However, experiencing it too much or too often means we risk becoming overwhelmed, unable to find balance in our lives[0m
+[34mor to relax and recover. Our ability to find some inner peace has never[0m
+[34mbeen more important to our well-being.[0m
+[34mThis report is about framing anxiety as an essential aspect of our humanity[0m
+[34mand part of the natural human emotional response to circumstances in our lives. It is also about challenging the stigma that still gets in the way of our[0m
+[34mreaching out for help and support when our levels of anxiety become a real[0m
+[34mproblem. As individuals and society we need to understand and engage with anxiety better, recognising when it is helpfully alerting us to pay attention,[0m
+[34mand ensuring we have coping strategies when its negative impact becomes too great.[0m
+[34mWe need to recognise when the people around us, our friends, family[0m
+[34mmembers and colleagues, are experiencing distressing levels of anxiety[0m
+[34mor at risk of this because of life events and circumstances. Local public[0m
+[34mhealth strategies need to identify the points at which people are most likely[0m
+[34mto experience high anxiety and to offer a range of help that is simple, quick[0m
+[34mto access and non-stigmatising. We encourage public health commissioners[0m
+[34mto check the list of the most common sources of anxiety in this survey and[0m
+ [1m([0mRelevance-Extractor-[1;36m0[0m[1m)[0m [31m Entity.USER [0m [1;34mEntity.USER[0m[1m([0mEntity.USER[1m)[0m [1m([0m=>          [1m)[0m [1m([0mX           [1m)[0m       [1m([0m          [1m)[0m [1;34m[[0m[34mCANNOT RESPOND[0m[1;34m][0m
+ [1m([0mRelevance-Extractor-[1;36m0[0m[1m)[0m [31m Entity.AGENT [0m
+*[1m([0mRelevance-Extractor-[1;36m0[0m[1m)[0m [37m Entity.LLM [0m [1;32mEntity.LLM[0m[1m([0m          [1m)[0m [1m([0m=>          [1m)[0m [1m([0mX           [1m)[0m   [1;35mFUNC[0m[1m([0mextract_segments[1m)[0m [32mFUNC: [0m[1;32m{[0m
+[32m  [0m[32m"name"[0m[32m: [0m[32m"extract_segments"[0m[32m,[0m
+[32m  [0m[32m"arguments"[0m[32m: [0m[1;32m{[0m
+[32m    [0m[32m"segment_list"[0m[32m: [0m[32m"2,3,4,6,7,13,14,15,19,20,21"[0m
+[32m  [0m[1;32m}[0m
+[1;32m}[0m
+*[1m([0mRelevance-Extractor-[1;36m0[0m[1m)[0m [37m Entity.AGENT [0m [1;31mEntity.AGENT[0m[1m([0mextract_segments[1m)[0m [1m([0m=>          [1m)[0m [1m([0mX           [1m)[0m       [1m([0m          [1m)[0m [31mDONE  Anxiety helps us to identify and respond to danger in ‘fight or flight’[0m
+[31mmode.   It can motivate to us face up to dealing with difficult challenges.   The[0m
+[31m‘right’ amount of anxiety can help us perform better and stimulate action[0m
+[31mand creativity.   Persistent anxiety causes real emotional[0m
+[31mdistress and can lead to us becoming unwell and, at worst, developing[0m
+[31manxiety disorders such as panic attacks, phobias and obsessional behaviours.   Anxiety at this level can have a truly distressing and debilitating impact[0m
+[31mon our lives and impact on our physical as well as our mental health.   Yet it remains under-reported, under-diagnosed and under-[0m
+[31mtreated.   A good ability to cope with anxiety is key to resilience in the face of[0m
+[31mwhatever life throws at us.   However, experiencing it too much or too often means we risk becoming overwhelmed, unable to find balance in our lives[0m
+[31mor to relax and recover.   As individuals and society we need to understand and engage with anxiety better, recognising when it is helpfully alerting us to pay attention,[0m
+[31mand ensuring we have coping strategies when its negative impact becomes too great.   We need to recognise when the people around us, our friends, family[0m
+[31mmembers and colleagues, are experiencing distressing levels of anxiety[0m
+[31mor at risk of this because of life events and circumstances.   Local public[0m
+[31mhealth strategies need to identify the points at which people are most likely[0m
+[31mto experience high anxiety and to offer a range of help that is simple, quick[0m
+[31mto access and non-stigmatising. [0m

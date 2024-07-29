@@ -11,7 +11,7 @@ HUG_TOKEN = os.getenv('HUG_TOKEN')
 
 def reader_model(context, prompt):
     prompt_in_chat_format = [{"role": "system",
-                              "content": "Using the information contained in the context, give a comprehensive answer to the question. Respond only to the question asked, response should be concise and relevant to the question."},
+                              "content": "Using the information contained in the context and its documents, give a comprehensive answer to the question. Respond only to the question asked, response should be clear, unrepetative and relevant to the question."},
                              {"role": "user",
                               "content": f"Context:{context} - here is the question you need to answer. Question: {prompt}"}]
 
@@ -28,6 +28,7 @@ def reader_model(context, prompt):
                                                  token=HUG_TOKEN,
                                                  offload_folder="offload")  #, quantization_config=bnb_config)
 
+    #model.to('cpu')
     tokenizer = AutoTokenizer.from_pretrained(READER_MODEL_NAME, padding_side='left')
 
     READER_LLM = pipeline(model=model,
