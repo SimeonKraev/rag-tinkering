@@ -18,7 +18,7 @@ print(f"Answer: {answer_formatted}")
 
 # READER_MODEL_NAME = "TinyLlama/TinyLlama_v1.1"  # 1.1B params
 # EMBEDDING_MODEL_NAME = "thenlper/gte-small" # "Snowflake/snowflake-arctic-embed-m" "avsolatorio/GIST-Embedding-v0"
-# HUG_TOKEN = "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"
+# HUG_TOKEN = ""
 # LOCAL_PDF_PATH = "C://Users//shush//Desktop//psych//02. Cognitive Therapy Skills Author University of Michigan.pdf"
 # MARKDOWN_SEPARATORS = ["\n#{1,6} ", "```\n", "\n\\*\\*\\*+\n", "\n---+\n", "\n___+\n", "\n\n", "\n", " ", ""]
 
