@@ -2,7 +2,7 @@ import os
 import torch
 from dotenv import load_dotenv
 from transformers import pipeline
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
 load_dotenv()
 READER_MODEL_NAME = os.getenv('READER_MODEL_NAME')
@@ -15,11 +15,6 @@ def reader_model(context, prompt):
                              {"role": "user",
                               "content": f"Context:{context} - here is the question you need to answer. Question: {prompt}"}]
 
-    # for quantization, not used atm
-    bnb_config = BitsAndBytesConfig(load_in_4bit=True,
-                                    bnb_4bit_use_double_quant=True,
-                                    bnb_4bit_quant_type="nf4",
-                                    bnb_4bit_compute_dtype=torch.bfloat16)
 
     model = AutoModelForCausalLM.from_pretrained(READER_MODEL_NAME,
                                                  device_map="auto",
@@ -28,7 +23,6 @@ def reader_model(context, prompt):
                                                  token=HUG_TOKEN,
                                                  offload_folder="offload")  #, quantization_config=bnb_config)
 
-    #model.to('cpu')
     tokenizer = AutoTokenizer.from_pretrained(READER_MODEL_NAME, padding_side='left')
 
     READER_LLM = pipeline(model=model,

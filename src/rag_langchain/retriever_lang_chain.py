@@ -4,11 +4,12 @@ from langchain_community.vectorstores.utils import DistanceStrategy
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
+from langchain_core.documents import Document
 
 from transformers import AutoTokenizer
+from src.misc.misc import load_pdf
 from typing import Optional, List
 from dotenv import load_dotenv
-from misc import load_pdf
 import os
 
 load_dotenv()
@@ -33,6 +34,7 @@ def split_documents(chunk_size: int, knowledge_base: List[LangchainDocument],
 
     docs_processed = []
     for doc in knowledge_base:
+        doc = Document(page_content=doc)
         docs_processed += text_splitter.split_documents([doc])
 
     # Remove duplicates

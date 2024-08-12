@@ -1,8 +1,8 @@
-from src.reader import reader_model
-from src.retriever_lang_chain import retriever_model
+from retriever_lang_chain import retriever_model
+from reader import reader_model
 from dotenv import load_dotenv
-import os
 import textwrap
+import os
 
 load_dotenv()
 LOCAL_PDF_PATH = os.getenv('LOCAL_PDF_PATH')
@@ -16,10 +16,12 @@ answer = reader_model(context, prompt)
 answer_formatted = textwrap.fill(answer, width=120)
 print(f"Answer: {answer_formatted}")
 
+
+# vars for .env file
 # READER_MODEL_NAME = "TinyLlama/TinyLlama_v1.1"  # 1.1B params
 # EMBEDDING_MODEL_NAME = "thenlper/gte-small" # "Snowflake/snowflake-arctic-embed-m" "avsolatorio/GIST-Embedding-v0"
 # HUG_TOKEN = ""
-# LOCAL_PDF_PATH = "C://Users//shush//Desktop//psych//02. Cognitive Therapy Skills Author University of Michigan.pdf"
+# LOCAL_PDF_PATH = "path/to/pdf"
 # MARKDOWN_SEPARATORS = ["\n#{1,6} ", "```\n", "\n\\*\\*\\*+\n", "\n---+\n", "\n___+\n", "\n\n", "\n", " ", ""]
 
 

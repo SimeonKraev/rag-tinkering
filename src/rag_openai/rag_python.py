@@ -1,12 +1,11 @@
-import pandas as pd
-import tiktoken
-from misc import load_pdf, split_into_sentences, distances_from_embeddings
+from src.misc.misc import load_pdf, split_into_sentences, distances_from_embeddings
 from dotenv import load_dotenv
-import os
-import matplotlib.pyplot as plt
-from openai import OpenAI
-import numpy as np
 from ast import literal_eval
+from openai import OpenAI
+import pandas as pd
+import numpy as np
+import tiktoken
+import os
 
 
 load_dotenv()
@@ -16,7 +15,6 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI()
 
 pages = load_pdf(LOCAL_PDF_PATH)
-# print(pages)
 
 # Load the cl100k_base tokenizer which is designed to work with the ada-002 model
 tokenizer = tiktoken.get_encoding("cl100k_base")
@@ -69,23 +67,23 @@ df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
 shortened = []
 # Loop through the dataframe
 for row in df.iterrows():
-
     # If the text is None, go to the next row
     if row[1]['text'] is None:
         continue
-
     # If the number of tokens is greater than the max number of tokens, split the text into chunks
     if row[1]['n_tokens'] > max_tokens:
         shortened += split_into_many(row[1]['text'])
-
     # Otherwise, add the text to the list of shortened texts
     else:
         shortened.append(row[1]['text'])
 
+#
 df = pd.DataFrame(shortened, columns=['text'])
 df['n_tokens'] = df.text.apply(lambda x: len(tokenizer.encode(x)))
 df['embeddings'] = df.text.apply(
         lambda x: client.embeddings.create(input=x, model='text-embedding-ada-002').data[0].embedding)
+
+# Save the embeddings to a csv file for reuse
 # df.to_csv('embeddings.csv')
 
 

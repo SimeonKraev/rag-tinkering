@@ -1,9 +1,5 @@
+from typing import List
 from pypdf import PdfReader
-from typing import List, Optional
-from scipy import spatial
-import numpy as np
-
-from typing import List, Optional
 from scipy import spatial
 
 
