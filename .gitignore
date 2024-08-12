@@ -4,6 +4,7 @@ venv/
 __pycache__/
 /offload/
 .offload/
+src/rag_langchain/offload/
 /.ENV
 /venv/
 /src/.qdrant/
