@@ -7,3 +7,6 @@ __pycache__/
 /.ENV
 /venv/
 /src/.qdrant/
+src/logs
+src/rag_langroid/.qdrant
+src/rag_langroid/logs
